@@ -1,0 +1,12 @@
+name: keywordtrends
+title:
+username: aoiferyan
+account: aoiferyan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11181211
+bundleId: 8250924
+url: https://aoiferyan.shinyapps.io/keywordtrends/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
