@@ -5,7 +5,7 @@ account: aoiferyan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11181211
-bundleId: 8250924
+bundleId: 8306847
 url: https://aoiferyan.shinyapps.io/keywordtrends/
 version: 1
 asMultiple: FALSE
