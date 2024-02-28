@@ -49,13 +49,9 @@ server <- function(input, output, session) {
     max_yval <- max(c(data()$yo_y_change, data()$three_month_change))
     min_yval <- min(c(data()$yo_y_change, data()$three_month_change))
     range_yval <- max_yval - min_yval
-    shiny::updateSliderInput(inputId = "growth_range", min = min_yval - range_yval*0.05, max = max_yval + range_yval*0.05,
-                             value = c(min_yval - range_yval*0.05, max_yval + range_yval*0.05))
+    shiny::updateSliderInput(inputId = "growth_range", min = round(min_yval - range_yval*0.05), max = round(max_yval + range_yval*0.05),
+                             value = c(round(min_yval - range_yval*0.05), round(max_yval + range_yval*0.05)))
     
-  })
-  
-  output$test <- renderPrint({
-    max(data() %>% dplyr::select(avg_monthly_searches, dplyr::everything()[6:17]))
   })
   
   shiny::observeEvent(input$data_upload, {

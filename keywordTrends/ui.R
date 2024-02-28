@@ -91,7 +91,6 @@ ui <- shiny::fluidPage(
                          shiny::tabPanel("Growth Chart",
                                          # absolutePanel(top = 10, right = 10, shiny::downloadButton("scatter_download")),
                                          plotly::plotlyOutput("keyword_dynamic_plot"),
-                                         verbatimTextOutput("test"),
                                          DT::dataTableOutput("filter_selected_tab1"),
                                          shiny::downloadButton("data_download_tab1", label = "Download Data Table"),
                                          value = 1),
